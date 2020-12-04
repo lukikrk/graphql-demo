@@ -1,0 +1,22 @@
+App\Entity\Track:
+  type: entity
+  table: tracks
+  repositoryClass: App\Repository\TrackRepository
+  id:
+    id:
+      type: uuid
+  fields:
+    name:
+      type: string
+    position:
+      type: integer
+    length:
+      type: integer
+  manyToOne:
+    album:
+      targetEntity: Album
+      cascade:
+        - persist
+      joinColumn:
+        name: album_id
+        referencedColumnName: id

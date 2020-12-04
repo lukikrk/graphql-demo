@@ -1,0 +1,8 @@
+ArtistList:
+  type: object
+  config:
+    description: "A query to return list of Artists"
+    fields:
+      artists:
+        type: "[Artist]"
+        description: "Artists list"

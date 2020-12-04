@@ -1,0 +1,12 @@
+Artist:
+  type: object
+  config:
+    fields:
+      id:
+        type: "String!"
+        description: "The unique ID of the artist."
+      name:
+        type: "String!"
+        description: "The name of the artist."
+      albums:
+        type: "[Album]"

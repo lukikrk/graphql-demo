@@ -1,0 +1,8 @@
+AlbumInterface:
+  type: interface
+  config:
+    fields:
+      name:
+        type: "String!"
+      artist:
+        type: "Artist!"

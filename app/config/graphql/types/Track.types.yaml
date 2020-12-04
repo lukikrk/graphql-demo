@@ -1,0 +1,19 @@
+Track:
+  type: object
+  config:
+    fields:
+      id:
+        type: "String!"
+        description: "The unique ID of the track."
+      name:
+        type: "String!"
+        description: "The name of the track."
+      position:
+        type: "Int!"
+        description: "Position on the album list."
+      length:
+        type: "String!"
+        description: "Length og the track."
+      album:
+        type: "Album!"
+        description: "Album of the track."

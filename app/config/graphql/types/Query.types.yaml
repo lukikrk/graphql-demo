@@ -1,0 +1,56 @@
+Query:
+  type: object
+  config:
+    fields:
+
+      artist:
+        type: "Artist"
+        args:
+          id:
+            description: "Resolves using the artist id."
+            type: "String!"
+        resolve: "@=resolver('Artist', [args])"
+
+      artist_list:
+        type: "ArtistList"
+        args:
+          limit:
+            description: "limit"
+            type: "Int"
+        resolve: "@=resolver('ArtistList', [args])"
+
+      album:
+        type: "Album"
+        args:
+          id:
+            description: "Resolves using the album id."
+            type: "String!"
+        resolve: "@=resolver('Album', [args])"
+
+      album_list:
+        type: "AlbumList"
+        args:
+          limit:
+            description: "limit"
+            type: "Int"
+          artist:
+            type: "String"
+        resolve: "@=resolver('AlbumList', [args])"
+
+      track:
+        type: "Track"
+        args:
+          id:
+            description: "Resolves using the track id."
+            type: "String!"
+        resolve: "@=resolver('Track', [args])"
+
+      track_list:
+        type: "TrackList"
+        args:
+          limit:
+            description: "limit"
+            type: "Int"
+          album:
+            type: "String"
+        resolve: "@=resolver('TrackList', [args])"

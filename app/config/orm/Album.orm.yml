@@ -1,0 +1,25 @@
+App\Entity\Album:
+  type: entity
+  table: albums
+  repositoryClass: App\Repository\AlbumRepository
+  id:
+    id:
+      type: uuid
+  fields:
+    name:
+      type: string
+    year:
+      type: integer
+  manyToOne:
+    artist:
+      targetEntity: Artist
+      cascade:
+        - persist
+      joinColumn:
+        name: artist_id
+        referencedColumnName: id
+  oneToMany:
+    tracks:
+      targetEntity: Track
+      mappedBy: album
+

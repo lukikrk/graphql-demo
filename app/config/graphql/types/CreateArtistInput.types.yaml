@@ -1,0 +1,6 @@
+CreateArtistInput:
+  type: input-object
+  config:
+    fields:
+      name:
+        type: "String!"

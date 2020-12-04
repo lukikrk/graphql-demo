@@ -1,0 +1,10 @@
+CreateAlbumInput:
+  type: input-object
+  config:
+    fields:
+      name:
+        type: "String!"
+      year:
+        type: "Int!"
+      artist:
+        type: "String!"

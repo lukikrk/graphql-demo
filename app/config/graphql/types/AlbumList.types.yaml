@@ -1,0 +1,8 @@
+AlbumList:
+  type: object
+  config:
+    description: "A query to return list of Albums"
+    fields:
+      albums:
+        type: "[Album]"
+        description: "Albums list"

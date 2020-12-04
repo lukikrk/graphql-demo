@@ -1,0 +1,49 @@
+Mutation:
+  type: object
+  config:
+    fields:
+
+      create_artist:
+        type: Artist!
+        resolve: "@=mutation('create_artist', [args])"
+        args:
+          input:
+            type: CreateArtistInput!
+
+      update_artist:
+        type: Artist!
+        resolve: "@=mutation('update_artist', [args])"
+        args:
+          id: String!
+          input:
+            type: UpdateArtistInput!
+
+      create_album:
+        type: Album!
+        resolve: "@=mutation('create_album', [args])"
+        args:
+          input:
+            type: CreateAlbumInput!
+
+      update_album:
+        type: Album!
+        resolve: "@=mutation('update_album', [args])"
+        args:
+          id: String!
+          input:
+            type: UpdateAlbumInput!
+
+      create_track:
+        type: Track!
+        resolve: "@=mutation('create_track', [args])"
+        args:
+          input:
+            type: CreateTrackInput!
+
+      update_track:
+        type: Track!
+        resolve: "@=mutation('update_track', [args])"
+        args:
+          id: String!
+          input:
+            type: UpdateTrackInput!

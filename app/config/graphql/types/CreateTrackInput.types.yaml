@@ -1,0 +1,12 @@
+CreateTrackInput:
+  type: input-object
+  config:
+    fields:
+      name:
+        type: "String!"
+      position:
+        type: "Int!"
+      length:
+        type: "Int!"
+      album:
+        type: "String!"

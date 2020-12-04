@@ -1,0 +1,14 @@
+App\Entity\Artist:
+  type: entity
+  table: artists
+  repositoryClass: App\Repository\ArtistRepository
+  id:
+    id:
+      type: uuid
+  fields:
+    name:
+      type: string
+  oneToMany:
+    albums:
+      targetEntity: Album
+      mappedBy: artist

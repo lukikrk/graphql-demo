@@ -1,0 +1,8 @@
+TrackList:
+  type: object
+  config:
+    description: "A query to return list of Trackss"
+    fields:
+      tracks:
+        type: "[Track]"
+        description: "Tracks list"

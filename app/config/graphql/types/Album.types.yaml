@@ -1,0 +1,19 @@
+Album:
+  type: object
+  config:
+    interfaces: [AlbumInterface]
+    fields:
+      id:
+        type: "String!"
+        description: "The unique ID of the album."
+      name:
+        type: "String!"
+        description: "The name of the album."
+      year:
+        type: "Int!"
+        description: "Year when the album was released."
+      artist:
+        type: "Artist!"
+        description: "Artist who created the album."
+      tracks:
+        type: "[Track]"
